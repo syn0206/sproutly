@@ -28,6 +28,9 @@ class AutoSchedule(models.Model):
     
     temperature_control_enabled = models.BooleanField(default=True)
     temperature_target = models.FloatField() # degree celsius
+
+    nutrients_control_enabled = models.BooleanField(default=True)
+    nutrients_target = models.FloatField() # mL
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
